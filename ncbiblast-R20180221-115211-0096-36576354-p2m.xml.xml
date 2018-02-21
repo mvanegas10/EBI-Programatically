@@ -1,0 +1,4292 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.2.29+"/>
+  <commandLine command="/nfs/public/release/wp-jdispatcher/latest/appbin/linux-x86_64/ncbi-blast-2.2.29+/bin/blastp -db &quot;uniprotkb_swissprot&quot; -query ncbiblast-R20180221-115211-0096-36576354-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20180221-115211-0096-36576354-p2m.archive -seg no -ungapped -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P01174|WAP_RAT Whey acidic protein OS=Rattus norvegicus GN=Wap PE=1 SV=2" type="PROTEIN" length="137"/>
+   </sequences>
+   <databases total="1" sequences="556388" letters="199430408">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN" created="2017-12-19T10:26:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2018-02-21T11:52:13+00:00" end="2018-02-21T11:52:15+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="179">
+   <hit number="1" database="SP" id="WAP_RAT" ac="P01174" length="137" description="Whey acidic protein OS=Rattus norvegicus GN=Wap PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>763</score>
+      <bits>355.624</bits>
+      <expectation>1.3E-97</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="1" end="137">MRCSISLVLGLLALEVALARNLQEHVFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTPVNIEVQKAGRCPWNPIQMIAAGPCPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEPKSPTVISFQ</querySeq>
+      <pattern>MRCSISLVLGLLALEVALARNLQEHVFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTPVNIEVQKAGRCPWNPIQMIAAGPCPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEPKSPTVISFQ</pattern>
+      <matchSeq start="1" end="137">MRCSISLVLGLLALEVALARNLQEHVFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTPVNIEVQKAGRCPWNPIQMIAAGPCPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEPKSPTVISFQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="WAP_MOUSE" ac="P01173" length="134" description="Whey acidic protein OS=Mus musculus GN=Wap PE=1 SV=3">
+    <alignments total="3">
+     <alignment number="1">
+      <score>348</score>
+      <bits>163.789</bits>
+      <expectation>7.5E-40</expectation>
+      <identity>74.2</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="1" end="93">MRCSISLVLGLLALEVALARNLQEHVFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTPVNIEVQKAGRCPWNPIQMIAA</querySeq>
+      <pattern>MRC ISLVLGLLALEVALA+NL+E VFNSVQSM    S  E TECI CQTNEECAQN MCCP SCGR+ KTPVNI V KAG CPWN +Q I++</pattern>
+      <matchSeq start="1" end="93">MRCLISLVLGLLALEVALAQNLEEQVFNSVQSMFQKASPIEGTECIICQTNEECAQNAMCCPGSCGRTRKTPVNIGVPKAGFCPWNLLQTISS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>122</score>
+      <bits>59.3198</bits>
+      <expectation>2.1E-8</expectation>
+      <identity>51.4</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="92" end="128">AAGPCPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEP</querySeq>
+      <pattern>+ GPCP    CS D +CSG MKCC   C+M+C  P P</pattern>
+      <matchSeq start="93" end="129">STGPCPMKIECSSDRECSGNMKCCNVDCVMTCTPPVP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>69</score>
+      <bits>34.8204</bits>
+      <expectation>0.5</expectation>
+      <identity>36.7</identity>
+      <positives>53.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="46" end="75">INCQTNEECAQNDMCCPSSCGRSCKTPVNI</querySeq>
+      <pattern>I C ++ EC+ N  CC   C  +C  PV +</pattern>
+      <matchSeq start="101" end="130">IECSSDRECSGNMKCCNVDCVMTCTPPVPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="WAP_RABIT" ac="P09412" length="127" description="Whey acidic protein OS=Oryctolagus cuniculus GN=WAP PE=2 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>129</score>
+      <bits>62.5556</bits>
+      <expectation>2.2E-9</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="92">CQTNEECAQNDMCCPSSCGRSCKTPVNIEVQKAGRCPWNPIQMIA</querySeq>
+      <pattern>C ++ +C  + +CCPS+ G SC+TP+ +   KAGRCPW    M++</pattern>
+      <matchSeq start="43" end="87">CLSDNDCLGSTVCCPSAAGGSCRTPIIVPTPKAGRCPWVQAPMLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>72</score>
+      <bits>36.2072</bits>
+      <expectation>0.19</expectation>
+      <identity>84.2</identity>
+      <positives>84.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="1" end="19">MRCSISLVLGLLALEVALA</querySeq>
+      <pattern>MRC ISL LGLLALE ALA</pattern>
+      <matchSeq start="1" end="19">MRCLISLALGLLALEAALA</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>70</score>
+      <bits>35.2827</bits>
+      <expectation>0.36</expectation>
+      <identity>35.5</identity>
+      <positives>58.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="96" end="126">CPKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C + + C+ D +C G  KCC + C M  ++P</pattern>
+      <matchSeq start="90" end="120">CEELSDCANDIECRGDKKCCFSRCAMRYLEP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="WAP_PIG" ac="O46655" length="132" description="Whey acidic protein OS=Sus scrofa GN=WAP PE=1 SV=1">
+    <alignments total="4">
+     <alignment number="1">
+      <score>107</score>
+      <bits>52.386</bits>
+      <expectation>2.6E-6</expectation>
+      <identity>44.4</identity>
+      <positives>61.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="96" end="131">CPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEPKSP</querySeq>
+      <pattern>C + N CS D  C G  KCC + C M C+DP+ ++P</pattern>
+      <matchSeq start="95" end="130">CLEKNECSRDDQCRGNKKCCFSSCAMRCLDPDTEAP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>97</score>
+      <bits>47.7635</bits>
+      <expectation>6.3E-5</expectation>
+      <identity>57.1</identity>
+      <positives>64.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="60" end="87">CCPSSCGRSCKTPVNIEVQKAGRCPWNP</querySeq>
+      <pattern>C  S C RSC  P+ + V KAGRCPW P</pattern>
+      <matchSeq start="60" end="87">CARSPCSRSCTVPLLVPVPKAGRCPWVP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>40.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  +++C  N  CC SSC   C  P</pattern>
+      <matchSeq start="101" end="125">CSRDDQCRGNKKCCFSSCAMRCLDP</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>44.4</identity>
+      <positives>51.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="38" end="64">SFSEDTECINCQTNEECAQNDMCCPSS</querySeq>
+      <pattern>S SED   I+C  +E C Q   CC  S</pattern>
+      <matchSeq start="37" end="63">SSSEDPCVISCVNDESCPQGTKCCARS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="UROL1_HUMAN" ac="Q5DID0" length="1318" description="Uromodulin-like 1 OS=Homo sapiens GN=UMODL1 PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>52.386</bits>
+      <expectation>2.6E-6</expectation>
+      <identity>36.8</identity>
+      <positives>52.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="75" end="131">IEVQKAGRCPWNPIQMIAAGPCPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEPKSP</querySeq>
+      <pattern>+ + ++G+    P    A GP P  +PCS+D DC G  KCC       CM P P++P</pattern>
+      <matchSeq start="106" end="162">LPLNQSGQFTSRPGACPAEGPEPSTSPCSLDIDCPGLEKCCPWSGGRYCMAPAPQAP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="WAP_CAMDR" ac="P09837" length="117" description="Whey acidic protein OS=Camelus dromedarius GN=WAP PE=1 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>100</score>
+      <bits>49.1503</bits>
+      <expectation>2.4E-5</expectation>
+      <identity>44.4</identity>
+      <positives>55.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="91" end="126">IAAGPCPKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>+ A  C + N CS D  C G  KCC + C M C+DP</pattern>
+      <matchSeq start="75" end="110">LTAKHCLEKNDCSRDDQCEGNKKCCFSSCAMRCLDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>70</score>
+      <bits>35.2827</bits>
+      <expectation>0.36</expectation>
+      <identity>40.7</identity>
+      <positives>55.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="73">NCQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>+C  +++C  N  CC SSC   C  PV</pattern>
+      <matchSeq start="85" end="111">DCSRDDQCEGNKKCCFSSCAMRCLDPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="WFDC2_MOUSE" ac="Q9DAU7" length="174" description="WAP four-disulfide core domain protein 2 OS=Mus musculus GN=Wfdc2 PE=1 SV=1">
+    <alignments total="4">
+     <alignment number="1">
+      <score>94</score>
+      <bits>46.3767</bits>
+      <expectation>1.7E-4</expectation>
+      <identity>61.9</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="99" end="119">DNPCSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>++ C +DS CSG MKCC+NGC</pattern>
+      <matchSeq start="144" end="164">EDQCQVDSQCSGNMKCCRNGC</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>80</score>
+      <bits>39.9052</bits>
+      <expectation>0.015</expectation>
+      <identity>38.2</identity>
+      <positives>52.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="135">CSIDSDCSGTMKCCKNGCIMSCMDPEPKSPTVIS</querySeq>
+      <pattern>C++D DC+   KCC+ GC   C  P   S   +S</pattern>
+      <matchSeq start="49" end="82">CTLDKDCADNRKCCQAGCSSVCSKPNGPSEGELS</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>33.3</identity>
+      <positives>51.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="46" end="72">INCQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>+ C  +++CA N  CC + C   C  P</pattern>
+      <matchSeq start="47" end="73">LECTLDKDCADNRKCCQAGCSSVCSKP</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>37.5</identity>
+      <positives>58.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="71">CQTNEECAQNDMCCPSSCGRSCKT</querySeq>
+      <pattern>CQ + +C+ N  CC + CG+   T</pattern>
+      <matchSeq start="147" end="170">CQVDSQCSGNMKCCRNGCGKMACT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="WFD18_MOUSE" ac="P62810" length="74" description="WAP four-disulfide core domain protein 18 OS=Mus musculus GN=Wfdc18 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>93</score>
+      <bits>45.9145</bits>
+      <expectation>2.3E-4</expectation>
+      <identity>53.6</identity>
+      <positives>60.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="99" end="126">DNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>D  C+ D  CSG MKCC NGC  +C  P</pattern>
+      <matchSeq start="45" end="72">DERCTGDGSCSGNMKCCSNGCGHACKPP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>73</score>
+      <bits>36.6694</bits>
+      <expectation>0.14</expectation>
+      <identity>42.3</identity>
+      <positives>57.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C  +  C+ N  CC + CG +CK PV</pattern>
+      <matchSeq start="48" end="73">CTGDGSCSGNMKCCSNGCGHACKPPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="WFD18_BOVIN" ac="P62811" length="74" description="WAP four-disulfide core domain protein 18 OS=Bos taurus GN=WFDC18 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>93</score>
+      <bits>45.9145</bits>
+      <expectation>2.3E-4</expectation>
+      <identity>53.6</identity>
+      <positives>60.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="99" end="126">DNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>D  C+ D  CSG MKCC NGC  +C  P</pattern>
+      <matchSeq start="45" end="72">DERCTGDGSCSGNMKCCSNGCGHACKPP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>73</score>
+      <bits>36.6694</bits>
+      <expectation>0.14</expectation>
+      <identity>42.3</identity>
+      <positives>57.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C  +  C+ N  CC + CG +CK PV</pattern>
+      <matchSeq start="48" end="73">CTGDGSCSGNMKCCSNGCGHACKPPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="WFDC2_RAT" ac="Q8CHN3" length="168" description="WAP four-disulfide core domain protein 2 OS=Rattus norvegicus GN=Wfdc2 PE=2 SV=1">
+    <alignments total="4">
+     <alignment number="1">
+      <score>92</score>
+      <bits>45.4522</bits>
+      <expectation>3.1E-4</expectation>
+      <identity>61.9</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="99" end="119">DNPCSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>++ C +DS CSG MKCC+NGC</pattern>
+      <matchSeq start="138" end="158">EDQCQMDSQCSGNMKCCRNGC</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>74</score>
+      <bits>37.1317</bits>
+      <expectation>0.1</expectation>
+      <identity>38.2</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="135">CSIDSDCSGTMKCCKNGCIMSCMDPEPKSPTVIS</querySeq>
+      <pattern>C +D+DC    KCC+ GC   C  P   S   +S</pattern>
+      <matchSeq start="49" end="82">CILDNDCQDNYKCCQAGCGSVCSKPNGLSEGKLS</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>31.4</identity>
+      <positives>42.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="82">CQTNEECAQNDMCCPSSCGRSCKTPVNIEVQKAGR</querySeq>
+      <pattern>C  + +C  N  CC + CG  C  P  +   K  R</pattern>
+      <matchSeq start="49" end="83">CILDNDCQDNYKCCQAGCGSVCSKPNGLSEGKLSR</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.0</identity>
+      <positives>65.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="67">CQTNEECAQNDMCCPSSCGR</querySeq>
+      <pattern>CQ + +C+ N  CC + CG+</pattern>
+      <matchSeq start="141" end="160">CQMDSQCSGNMKCCRNGCGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="KALM_HUMAN" ac="P23352" length="680" description="Anosmin-1 OS=Homo sapiens GN=ANOS1 PE=1 SV=3">
+    <alignments total="2">
+     <alignment number="1">
+      <score>92</score>
+      <bits>45.4522</bits>
+      <expectation>3.1E-4</expectation>
+      <identity>50.0</identity>
+      <positives>69.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="127">CSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>C +D++CSG  KCC NGC  +C  P+</pattern>
+      <matchSeq start="151" end="176">CEVDNECSGVKKCCSNGCGHTCQVPK</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>72</score>
+      <bits>36.2072</bits>
+      <expectation>0.19</expectation>
+      <identity>34.6</identity>
+      <positives>61.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="72">NCQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>+C+ + EC+    CC + CG +C+ P</pattern>
+      <matchSeq start="150" end="175">SCEVDNECSGVKKCCSNGCGHTCQVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="KALM_COTJA" ac="Q90369" length="674" description="Anosmin-1 OS=Coturnix japonica GN=ANOS1 PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>91</score>
+      <bits>44.99</bits>
+      <expectation>4.3E-4</expectation>
+      <identity>53.8</identity>
+      <positives>65.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="127">CSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>C  DS+CSG  KCC NGC  +C  P+</pattern>
+      <matchSeq start="145" end="170">CEADSECSGVKKCCSNGCGHTCQVPK</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>78</score>
+      <bits>38.9807</bits>
+      <expectation>0.028</expectation>
+      <identity>34.5</identity>
+      <positives>62.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="75">NCQTNEECAQNDMCCPSSCGRSCKTPVNI</querySeq>
+      <pattern>+C+ + EC+    CC + CG +C+ P N+</pattern>
+      <matchSeq start="144" end="172">SCEADSECSGVKKCCSNGCGHTCQVPKNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="KALM_CHICK" ac="P33005" length="675" description="Anosmin-1 OS=Gallus gallus GN=ANOS1 PE=2 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>91</score>
+      <bits>44.99</bits>
+      <expectation>4.3E-4</expectation>
+      <identity>53.8</identity>
+      <positives>65.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="127">CSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>C  DS+CSG  KCC NGC  +C  P+</pattern>
+      <matchSeq start="145" end="170">CEADSECSGVKKCCSNGCGHTCQVPK</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>78</score>
+      <bits>38.9807</bits>
+      <expectation>0.028</expectation>
+      <identity>34.5</identity>
+      <positives>62.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="75">NCQTNEECAQNDMCCPSSCGRSCKTPVNI</querySeq>
+      <pattern>+C+ + EC+    CC + CG +C+ P N+</pattern>
+      <matchSeq start="144" end="172">SCEADSECSGVKKCCSNGCGHTCQVPKNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="WFDC5_LEMCA" ac="A4K2S3" length="123" description="WAP four-disulfide core domain protein 5 OS=Lemur catta GN=WFDC5 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>90</score>
+      <bits>44.5277</bits>
+      <expectation>6.0E-4</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C+ DSDCSG  +CC   C   C DP</pattern>
+      <matchSeq start="91" end="120">PTEHLCNKDSDCSGKKRCCHTSCGRECRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CC +SCGR C+ P</pattern>
+      <matchSeq start="96" end="120">CNKDSDCSGKKRCCHTSCGRECRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>71</score>
+      <bits>35.7449</bits>
+      <expectation>0.26</expectation>
+      <identity>47.8</identity>
+      <positives>52.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  TMKCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CQEDSQCPSTMKCCFQACFRHCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="WAP2_PHIOL" ac="A7X4K7" length="73" description="Waprin-Phi2 OS=Philodryas olfersii PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>44.5277</bits>
+      <expectation>6.0E-4</expectation>
+      <identity>83.3</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="119">CSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>CS DSDCS T KCCKNGC</pattern>
+      <matchSeq start="46" end="63">CSKDSDCSETKKCCKNGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="WAP1_PHIOL" ac="A7X4K1" length="134" description="Waprin-Phi1 OS=Philodryas olfersii PE=2 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>90</score>
+      <bits>44.5277</bits>
+      <expectation>6.0E-4</expectation>
+      <identity>83.3</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="119">CSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>CS DSDCS T KCCKNGC</pattern>
+      <matchSeq start="107" end="124">CSKDSDCSETKKCCKNGC</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>78</score>
+      <bits>38.9807</bits>
+      <expectation>0.028</expectation>
+      <identity>44.0</identity>
+      <positives>64.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>CQ++  C +N  CC + CG SC+ P</pattern>
+      <matchSeq start="59" end="83">CQSDAGCEENKKCCRTGCGTSCQIP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>77</score>
+      <bits>38.5184</bits>
+      <expectation>0.038</expectation>
+      <identity>42.9</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  D+ C    KCC+ GC  SC  P+ K</pattern>
+      <matchSeq start="59" end="86">CQSDAGCEENKKCCRTGCGTSCQIPDEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="WFDC5_CHLAE" ac="A4K2Y3" length="123" description="WAP four-disulfide core domain protein 5 OS=Chlorocebus aethiops GN=WFDC5 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>89</score>
+      <bits>44.0655</bits>
+      <expectation>8.2E-4</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  DSDCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PVNHQCHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CC S+CGR C+ P</pattern>
+      <matchSeq start="96" end="120">CHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>43.5</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  T KCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CVEDSQCPLTRKCCYRACFRQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="ELAF_HUMAN" ac="P19957" length="117" description="Elafin OS=Homo sapiens GN=PI3 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>44.0655</bits>
+      <expectation>8.2E-4</expectation>
+      <identity>39.0</identity>
+      <positives>51.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="87" end="127">PIQMIAAGPCPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>PI +I        N C  D+DC G  KCC+  C M+C  P+</pattern>
+      <matchSeq start="77" end="117">PIILIRCAMLNPPNRCLKDTDCPGIKKCCEGSCGMACFVPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="WFDC5_PONAB" ac="A4K2V3" length="123" description="WAP four-disulfide core domain protein 5 OS=Pongo abelii GN=WFDC5 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>88</score>
+      <bits>43.6032</bits>
+      <expectation>0.0011</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  DSDCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PMNHLCHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CC S+CGR C+ P</pattern>
+      <matchSeq start="96" end="120">CHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>43.5</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  T KCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CVEDSQCPLTRKCCYRACFRQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="WFDC5_PAPAN" ac="A4K2M5" length="123" description="WAP four-disulfide core domain protein 5 OS=Papio anubis GN=WFDC5 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>88</score>
+      <bits>43.6032</bits>
+      <expectation>0.0011</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  DSDCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PMNHLCHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CC S+CGR C+ P</pattern>
+      <matchSeq start="96" end="120">CHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>43.5</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  T KCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CVEDSQCPLTRKCCYRACFRQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="SP" id="WFDC5_PANTR" ac="A4K2N9" length="123" description="WAP four-disulfide core domain protein 5 OS=Pan troglodytes GN=WFDC5 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>88</score>
+      <bits>43.6032</bits>
+      <expectation>0.0011</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  DSDCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PMNHLCHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CC S+CGR C+ P</pattern>
+      <matchSeq start="96" end="120">CHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>43.5</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  T KCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CVEDSQCPLTRKCCYRACFRQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="SP" id="WFDC5_MACMU" ac="A4K2T2" length="123" description="WAP four-disulfide core domain protein 5 OS=Macaca mulatta GN=WFDC5 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>88</score>
+      <bits>43.6032</bits>
+      <expectation>0.0011</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  DSDCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PMNHLCHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CC S+CGR C+ P</pattern>
+      <matchSeq start="96" end="120">CHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>43.5</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  T KCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CVEDSQCPLTRKCCYRACFRQCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="SP" id="WFDC5_HUMAN" ac="Q8TCV5" length="224" description="WAP four-disulfide core domain protein 5 OS=Homo sapiens GN=WFDC5 PE=2 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>88</score>
+      <bits>43.6032</bits>
+      <expectation>0.0011</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  DSDCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PMNHLCHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CC S+CGR C+ P</pattern>
+      <matchSeq start="96" end="120">CHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>43.5</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  T KCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CVEDSQCPLTRKCCYRACFRQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="SP" id="WFDC5_GORGO" ac="A4K2R4" length="123" description="WAP four-disulfide core domain protein 5 OS=Gorilla gorilla gorilla GN=WFDC5 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>88</score>
+      <bits>43.6032</bits>
+      <expectation>0.0011</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  DSDCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PMNHLCHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CC S+CGR C+ P</pattern>
+      <matchSeq start="96" end="120">CHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>43.5</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  T KCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CVEDSQCPLTRKCCYRACFRQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="SP" id="WFDC5_COLGU" ac="A4K2P7" length="123" description="WAP four-disulfide core domain protein 5 OS=Colobus guereza GN=WFDC5 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>88</score>
+      <bits>43.6032</bits>
+      <expectation>0.0011</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  DSDCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PMNHLCHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CC S+CGR C+ P</pattern>
+      <matchSeq start="96" end="120">CHKDSDCSGKKRCCHSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>43.5</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  T KCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CVEDSQCPLTRKCCYRACFRQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="SP" id="WAP_MACEU" ac="Q9N0L8" length="191" description="Whey acidic protein OS=Macropus eugenii GN=WAP PE=1 SV=1">
+    <alignments total="5">
+     <alignment number="1">
+      <score>88</score>
+      <bits>43.6032</bits>
+      <expectation>0.0011</expectation>
+      <identity>48.0</identity>
+      <positives>68.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>CQ +++C +N  CC S+CGR C  P</pattern>
+      <matchSeq start="150" end="174">CQRDDQCKENKKCCSSACGRRCTNP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>74</score>
+      <bits>37.1317</bits>
+      <expectation>0.1</expectation>
+      <identity>36.4</identity>
+      <positives>42.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="99" end="131">DNPCSIDSDCSGTMKCCKNGCIMSCMDPEPKSP</querySeq>
+      <pattern>D  C  D  C G  KCC + C  +C  P    P</pattern>
+      <matchSeq start="98" end="130">DKTCKTDLGCEGKAKCCASSCGQTCFMPVKAKP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>72</score>
+      <bits>36.2072</bits>
+      <expectation>0.19</expectation>
+      <identity>46.2</identity>
+      <positives>61.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C+T+  C     CC SSCG++C  PV</pattern>
+      <matchSeq start="101" end="126">CKTDLGCEGKAKCCASSCGQTCFMPV</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>71</score>
+      <bits>35.7449</bits>
+      <expectation>0.26</expectation>
+      <identity>41.7</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="125">CSIDSDCSGTMKCCKNGCIMSCMD</querySeq>
+      <pattern>C+ D+ C   M+CC+ GC   CM+</pattern>
+      <matchSeq start="46" end="69">CNDDASCPQNMRCCQRGCSWLCMN</matchSeq>
+     </alignment>
+     <alignment number="5">
+      <score>66</score>
+      <bits>33.4337</bits>
+      <expectation>1.3</expectation>
+      <identity>35.7</identity>
+      <positives>46.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  D  C    KCC + C   C +P P+</pattern>
+      <matchSeq start="150" end="177">CQRDDQCKENKKCCSSACGRRCTNPFPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="SP" id="WFDC2_PIG" ac="Q8MI69" length="123" description="WAP four-disulfide core domain protein 2 OS=Sus scrofa GN=WFDC2 PE=2 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>87</score>
+      <bits>43.141</bits>
+      <expectation>0.0016</expectation>
+      <identity>46.4</identity>
+      <positives>60.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  D+DC+  +KCCK GC+  C  P  K</pattern>
+      <matchSeq start="48" end="75">CLSDADCADNLKCCKAGCVTICQMPNEK</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>83</score>
+      <bits>41.292</bits>
+      <expectation>0.0056</expectation>
+      <identity>61.1</identity>
+      <positives>77.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="119">CSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>C +DS C G +KCC+NGC</pattern>
+      <matchSeq start="96" end="113">CQVDSQCPGQLKCCRNGC</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>36.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C ++ +CA N  CC + C   C+ P</pattern>
+      <matchSeq start="48" end="72">CLSDADCADNLKCCKAGCVTICQMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="SP" id="WFDC5_AOTNA" ac="A4K2W7" length="123" description="WAP four-disulfide core domain protein 5 OS=Aotus nancymaae GN=WFDC5 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>86</score>
+      <bits>42.6787</bits>
+      <expectation>0.0022</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  D+DCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PMNHLCHKDADCSGKKRCCSSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>79</score>
+      <bits>39.4429</bits>
+      <expectation>0.02</expectation>
+      <identity>42.3</identity>
+      <positives>61.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C  + +C+    CC S+CGR C+ PV</pattern>
+      <matchSeq start="96" end="121">CHKDADCSGKKRCCSSACGRDCRDPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="SP" id="WFDC2_HUMAN" ac="Q14508" length="124" description="WAP four-disulfide core domain protein 2 OS=Homo sapiens GN=WFDC2 PE=1 SV=2">
+    <alignments total="3">
+     <alignment number="1">
+      <score>86</score>
+      <bits>42.6787</bits>
+      <expectation>0.0022</expectation>
+      <identity>66.7</identity>
+      <positives>77.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="119">CSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>C +DS C G MKCC+NGC</pattern>
+      <matchSeq start="97" end="114">CQVDSQCPGQMKCCRNGC</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>42.9</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  DS+C+  +KCC  GC   C  P  K</pattern>
+      <matchSeq start="49" end="76">CVSDSECADNLKCCSAGCATFCSLPNDK</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>40.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C ++ ECA N  CC + C   C  P</pattern>
+      <matchSeq start="49" end="73">CVSDSECADNLKCCSAGCATFCSLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="SP" id="WFDC5_SAIBB" ac="A4K2X5" length="123" description="WAP four-disulfide core domain protein 5 OS=Saimiri boliviensis boliviensis GN=WFDC5 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>85</score>
+      <bits>42.2165</bits>
+      <expectation>0.003</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  D+DCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PMNHLCHKDADCSGKKRCCPSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>83</score>
+      <bits>41.292</bits>
+      <expectation>0.0056</expectation>
+      <identity>44.0</identity>
+      <positives>64.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CCPS+CGR C+ P</pattern>
+      <matchSeq start="96" end="120">CHKDADCSGKKRCCPSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>43.5</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  T KCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CMEDSQCPWTRKCCYKACFRQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="SP" id="WFDC5_CALJA" ac="A4K2U0" length="123" description="WAP four-disulfide core domain protein 5 OS=Callithrix jacchus GN=WFDC5 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>85</score>
+      <bits>42.2165</bits>
+      <expectation>0.003</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P ++ C  D+DCSG  +CC + C   C DP</pattern>
+      <matchSeq start="91" end="120">PMNHLCHKDADCSGKKRCCPSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>83</score>
+      <bits>41.292</bits>
+      <expectation>0.0056</expectation>
+      <identity>44.0</identity>
+      <positives>64.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C+    CCPS+CGR C+ P</pattern>
+      <matchSeq start="96" end="120">CHKDADCSGKKRCCPSACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>43.5</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  DS C  T KCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CMEDSQCPFTRKCCYRACFRQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="SP" id="WAPB_PSEAU" ac="B5L5N1" length="75" description="Auswaprin-b OS=Pseudechis australis PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>42.2165</bits>
+      <expectation>0.003</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWSCPGEQKCCRYGCIFECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="SP" id="WAPB_AUSSU" ac="B5L5P2" length="75" description="Supwaprin-b OS=Austrelaps superbus PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>42.2165</bits>
+      <expectation>0.003</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWSCPGEQKCCRYGCIFECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="SP" id="WAPA_PSEAU" ac="B5G6G9" length="74" description="Auswaprin-a OS=Pseudechis australis PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>42.2165</bits>
+      <expectation>0.003</expectation>
+      <identity>56.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  CSG  KCC  GCI  C DP</pattern>
+      <matchSeq start="46" end="70">CKNDWSCSGQQKCCNYGCIDECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="SP" id="WAPA_HOPST" ac="B5G6H3" length="75" description="Stewaprin-a OS=Hoplocephalus stephensii PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>42.2165</bits>
+      <expectation>0.003</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWSCPGEQKCCRYGCIFECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="SP" id="WAPA_AUSSU" ac="B5KGY9" length="75" description="Supwaprin-a OS=Austrelaps superbus PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>42.2165</bits>
+      <expectation>0.003</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWSCPGEQKCCRYGCIFECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="SP" id="WFDC1_MOUSE" ac="Q9ESH5" length="211" description="WAP four-disulfide core domain protein 1 OS=Mus musculus GN=Wfdc1 PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>84</score>
+      <bits>41.7542</bits>
+      <expectation>0.0041</expectation>
+      <identity>37.5</identity>
+      <positives>56.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="133">CSIDSDCSGTMKCCKNGCIMSCMDPEPKSPTV</querySeq>
+      <pattern>C  DS+C    +CC NGC  +C++  P  P +</pattern>
+      <matchSeq start="74" end="105">CQADSECPRHRRCCYNGCAYACLEAVPPPPVL</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>30.8</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="44" end="69">ECINCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>+   CQ + EC ++  CC + C  +C</pattern>
+      <matchSeq start="70" end="95">QATRCQADSECPRHRRCCYNGCAYAC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="SP" id="WFDC1_HUMAN" ac="Q9HC57" length="220" description="WAP four-disulfide core domain protein 1 OS=Homo sapiens GN=WFDC1 PE=2 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>84</score>
+      <bits>41.7542</bits>
+      <expectation>0.0041</expectation>
+      <identity>37.5</identity>
+      <positives>56.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="133">CSIDSDCSGTMKCCKNGCIMSCMDPEPKSPTV</querySeq>
+      <pattern>C  DS+C    +CC NGC  +C++  P  P +</pattern>
+      <matchSeq start="83" end="114">CQADSECPRHRRCCYNGCAYACLEAVPPPPVL</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>30.8</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="44" end="69">ECINCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>+   CQ + EC ++  CC + C  +C</pattern>
+      <matchSeq start="79" end="104">QAARCQADSECPRHRRCCYNGCAYAC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="SP" id="WAPD_DEMVE" ac="B5L5P7" length="75" description="Veswaprin-d OS=Demansia vestigiata PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>41.7542</bits>
+      <expectation>0.0041</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWSCRGEQKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="SP" id="WAPA_CRYNI" ac="B5G6H1" length="75" description="Nigwaprin-a OS=Cryptophis nigrescens PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>41.7542</bits>
+      <expectation>0.0041</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWSCRGEQKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="SP" id="WFDC5_OTOGA" ac="A4K2Q7" length="123" description="WAP four-disulfide core domain protein 5 OS=Otolemur garnettii GN=WFDC5 PE=3 SV=1">
+    <alignments total="4">
+     <alignment number="1">
+      <score>83</score>
+      <bits>41.292</bits>
+      <expectation>0.0056</expectation>
+      <identity>42.3</identity>
+      <positives>61.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C  +  C+    CCP++CGR C+ PV</pattern>
+      <matchSeq start="96" end="121">CHQDSNCSGKKRCCPTACGRDCRDPV</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>80</score>
+      <bits>39.9052</bits>
+      <expectation>0.015</expectation>
+      <identity>43.3</identity>
+      <positives>53.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="126">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>P  + C  DS+CSG  +CC   C   C DP</pattern>
+      <matchSeq start="91" end="120">PTKHLCHQDSNCSGKKRCCPTACGRDCRDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>47.8</identity>
+      <positives>56.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C+ DS C  TMKCC   C   C+</pattern>
+      <matchSeq start="49" end="71">CTDDSQCPSTMKCCPRACFRQCI</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>30.0</identity>
+      <positives>53.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="77">CQTNEECAQNDMCCPSSCGRSCKTPVNIEV</querySeq>
+      <pattern>C  + +C     CCP +C R C   V++++</pattern>
+      <matchSeq start="49" end="78">CTDDSQCPSTMKCCPRACFRQCIPRVSVKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="SP" id="WFDC1_RAT" ac="O70280" length="212" description="WAP four-disulfide core domain protein 1 OS=Rattus norvegicus GN=Wfdc1 PE=1 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>83</score>
+      <bits>41.292</bits>
+      <expectation>0.0056</expectation>
+      <identity>37.5</identity>
+      <positives>56.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="133">CSIDSDCSGTMKCCKNGCIMSCMDPEPKSPTV</querySeq>
+      <pattern>C  DS+C    +CC NGC  +C++  P  P +</pattern>
+      <matchSeq start="75" end="106">CQSDSECPRHRRCCYNGCAYACLEAVPPPPVL</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>30.8</identity>
+      <positives>57.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="44" end="69">ECINCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>+   CQ++ EC ++  CC + C  +C</pattern>
+      <matchSeq start="71" end="96">QATRCQSDSECPRHRRCCYNGCAYAC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="SP" id="WFDC2_RABIT" ac="Q28631" length="123" description="WAP four-disulfide core domain protein 2 OS=Oryctolagus cuniculus GN=WFDC2 PE=1 SV=2">
+    <alignments total="3">
+     <alignment number="1">
+      <score>82</score>
+      <bits>40.8297</bits>
+      <expectation>0.0078</expectation>
+      <identity>66.7</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="119">CSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>C +DS C G MKCC NGC</pattern>
+      <matchSeq start="96" end="113">CQVDSQCPGKMKCCLNGC</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>78</score>
+      <bits>38.9807</bits>
+      <expectation>0.028</expectation>
+      <identity>42.9</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  D DC+  +KCC+ GC   C  P  K</pattern>
+      <matchSeq start="50" end="77">CRADQDCAENLKCCRAGCSAICSIPNEK</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>70</score>
+      <bits>35.2827</bits>
+      <expectation>0.36</expectation>
+      <identity>34.6</identity>
+      <positives>61.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="72">NCQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>+C+ +++CA+N  CC + C   C  P</pattern>
+      <matchSeq start="49" end="74">DCRADQDCAENLKCCRAGCSAICSIP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="SP" id="WAPD_PSEPO" ac="B5L5N4" length="75" description="Porwaprin-d OS=Pseudechis porphyriacus PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>40.8297</bits>
+      <expectation>0.0078</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWRCPGEQKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="SP" id="WAPC_PSEPO" ac="B5L5N3" length="75" description="Porwaprin-c OS=Pseudechis porphyriacus PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>40.8297</bits>
+      <expectation>0.0078</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWRCPGEQKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="SP" id="WAPB_TROCA" ac="B5L5P0" length="75" description="Carwaprin-b OS=Tropidechis carinatus PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>40.8297</bits>
+      <expectation>0.0078</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWRCPGEQKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="SP" id="WAPB_DEMVE" ac="B5L5P5" length="75" description="Veswaprin-b OS=Demansia vestigiata PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>40.8297</bits>
+      <expectation>0.0078</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWRCPGEQKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="SP" id="WAPA_TROCA" ac="B5G6H2" length="75" description="Carwaprin-a OS=Tropidechis carinatus PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>40.8297</bits>
+      <expectation>0.0078</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWRCPGEQKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="SP" id="WAPA_NOTSC" ac="B5G6H4" length="75" description="Notewaprin-a OS=Notechis scutatus scutatus PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>40.8297</bits>
+      <expectation>0.0078</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWRCPGEQKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="SP" id="WAP3_PHIOL" ac="A7X4M7" length="80" description="Waprin-Phi3 OS=Philodryas olfersii PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>82</score>
+      <bits>40.8297</bits>
+      <expectation>0.0078</expectation>
+      <identity>43.8</identity>
+      <positives>46.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="128">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEP</querySeq>
+      <pattern>P +  C  D DC G  KCC  GC   C  P P</pattern>
+      <matchSeq start="48" end="79">PCNQYCVWDFDCEGNKKCCPVGCAKECFPPGP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>36.0</identity>
+      <positives>48.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C  N  CCP  C + C  P</pattern>
+      <matchSeq start="53" end="77">CVWDFDCEGNKKCCPVGCAKECFPP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="SP" id="ELAF_PIG" ac="Q29125" length="167" description="Elafin OS=Sus scrofa PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>40.8297</bits>
+      <expectation>0.0078</expectation>
+      <identity>46.4</identity>
+      <positives>60.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="127">NPCSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>N C  D+ C G  KCC+  C  +CMDP+</pattern>
+      <matchSeq start="140" end="167">NRCLSDAQCPGLKKCCEGFCGKACMDPK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="SP" id="WAPC_DEMVE" ac="B5L5P6" length="75" description="Veswaprin-c OS=Demansia vestigiata PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>40.3675</bits>
+      <expectation>0.011</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWRCPGERKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="SP" id="WAPC_AUSSU" ac="B5L5P3" length="75" description="Supwaprin-c OS=Austrelaps superbus PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>40.3675</bits>
+      <expectation>0.011</expectation>
+      <identity>52.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC  GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWSCRGEQKCCHYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="SP" id="WAPB_PSEPO" ac="B5L5N2" length="75" description="Porwaprin-b OS=Pseudechis porphyriacus PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>40.3675</bits>
+      <expectation>0.011</expectation>
+      <identity>52.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC  GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWSCRGEQKCCHYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="SP" id="WAPB_NOTSC" ac="B5G6H5" length="75" description="Notewaprin-b OS=Notechis scutatus scutatus PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>40.3675</bits>
+      <expectation>0.011</expectation>
+      <identity>52.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWICPGEQKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="SP" id="SLPI_PIG" ac="P22298" length="129" description="Antileukoproteinase (Fragment) OS=Sus scrofa GN=SLPI PE=1 SV=2">
+    <alignments total="3">
+     <alignment number="1">
+      <score>81</score>
+      <bits>40.3675</bits>
+      <expectation>0.011</expectation>
+      <identity>48.1</identity>
+      <positives>59.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  DS C G +KCCK+ C   C+ P</pattern>
+      <matchSeq start="100" end="126">NHCKTDSQCLGDLKCCKSMCGKVCLTP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>79</score>
+      <bits>39.4429</bits>
+      <expectation>0.02</expectation>
+      <identity>44.4</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="73">NCQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>+C+T+ +C  +  CC S CG+ C TPV</pattern>
+      <matchSeq start="101" end="127">HCKTDSQCLGDLKCCKSMCGKVCLTPV</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>36.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C+ D  C    KCC++ C + C++P</pattern>
+      <matchSeq start="48" end="72">CTSDWQCPDKKKCCRDTCAIKCLNP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="SP" id="WFDC1_CHICK" ac="Q8JG33" length="222" description="WAP four-disulfide core domain protein 1 OS=Gallus gallus GN=WFDC1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>39.9052</bits>
+      <expectation>0.015</expectation>
+      <identity>37.5</identity>
+      <positives>56.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="133">CSIDSDCSGTMKCCKNGCIMSCMDPEPKSPTV</querySeq>
+      <pattern>C  DS+C    +CC NGCI +C++     P +</pattern>
+      <matchSeq start="85" end="116">CRSDSECERHKRCCYNGCIYACLESVQPPPVL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="SP" id="WAPD_AUSSU" ac="B5L5P4" length="74" description="Supwaprin-d OS=Austrelaps superbus PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>39.9052</bits>
+      <expectation>0.015</expectation>
+      <identity>52.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC  GCI  C DP</pattern>
+      <matchSeq start="46" end="70">CKNDWSCPGQQKCCNYGCIDECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="SP" id="WAPC_OXYMI" ac="B5L5M9" length="74" description="Omwaprin-c OS=Oxyuranus microlepidotus PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>39.9052</bits>
+      <expectation>0.015</expectation>
+      <identity>52.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC  GCI  C DP</pattern>
+      <matchSeq start="46" end="70">CKNDWSCPGQQKCCNYGCIDECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="SP" id="WAPB_OXYMI" ac="B5G6G7" length="74" description="Omwaprin-b OS=Oxyuranus microlepidotus PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>39.9052</bits>
+      <expectation>0.015</expectation>
+      <identity>52.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC  GCI  C DP</pattern>
+      <matchSeq start="46" end="70">CKNDWSCPGQQKCCNYGCIDECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="SP" id="WAPA_PSETE" ac="B5L5P9" length="75" description="Textwaprin-a OS=Pseudonaja textilis PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>39.9052</bits>
+      <expectation>0.015</expectation>
+      <identity>52.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC  GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWSCPGQQKCCSYGCIDECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="SP" id="WAPA_PSEPO" ac="B5G6H0" length="74" description="Porwaprin-a OS=Pseudechis porphyriacus PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>39.9052</bits>
+      <expectation>0.015</expectation>
+      <identity>52.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC  GCI  C DP</pattern>
+      <matchSeq start="46" end="70">CKNDWSCPGQQKCCNYGCIDECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="SP" id="WAPA_OXYSC" ac="B5G6G8" length="75" description="Scuwaprin-a OS=Oxyuranus scutellatus scutellatus PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>39.9052</bits>
+      <expectation>0.015</expectation>
+      <identity>52.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC  GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDWSCPGQQKCCSYGCIDECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="SP" id="WAPA_DEMVE" ac="B5L5P8" length="74" description="Veswaprin-a OS=Demansia vestigiata PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>39.9052</bits>
+      <expectation>0.015</expectation>
+      <identity>52.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC  GCI  C DP</pattern>
+      <matchSeq start="46" end="70">CKNDWSCPGQQKCCNYGCIDECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="SP" id="WFDC3_HUMAN" ac="Q8IUB2" length="231" description="WAP four-disulfide core domain protein 3 OS=Homo sapiens GN=WFDC3 PE=2 SV=1">
+    <alignments total="7">
+     <alignment number="1">
+      <score>79</score>
+      <bits>39.4429</bits>
+      <expectation>0.02</expectation>
+      <identity>42.9</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="46" end="73">INCQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>+ C  +E C   + CC S CGR C  PV</pattern>
+      <matchSeq start="180" end="207">VGCVMDENCQAGEKCCKSGCGRFCVPPV</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>73</score>
+      <bits>36.6694</bits>
+      <expectation>0.14</expectation>
+      <identity>46.4</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  D  C G  KCC  GC  SC+ P  K</pattern>
+      <matchSeq start="89" end="116">CITDETCPGVKKCCTLGCNKSCVVPISK</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>73</score>
+      <bits>36.6694</bits>
+      <expectation>0.14</expectation>
+      <identity>44.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C +D +C    KCCK+GC   C+ P</pattern>
+      <matchSeq start="182" end="206">CVMDENCQAGEKCCKSGCGRFCVPP</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>71</score>
+      <bits>35.7449</bits>
+      <expectation>0.26</expectation>
+      <identity>37.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="93" end="124">AGPCPKDNPCSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>A P P +  C  D+ C    KCC  GC  +C+</pattern>
+      <matchSeq start="128" end="159">ADPLPCEELCDGDASCPQGHKCCSTGCGRTCL</matchSeq>
+     </alignment>
+     <alignment number="5">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>43.5</identity>
+      <positives>56.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="70">CQTNEECAQNDMCCPSSCGRSCK</querySeq>
+      <pattern>CQ +E C     CC + CGR C+</pattern>
+      <matchSeq start="44" end="66">CQGDELCPAEQKCCTTGCGRICR</matchSeq>
+     </alignment>
+     <alignment number="6">
+      <score>66</score>
+      <bits>33.4337</bits>
+      <expectation>1.3</expectation>
+      <identity>40.9</identity>
+      <positives>54.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="69">CQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>C  +  C Q   CC + CGR+C</pattern>
+      <matchSeq start="137" end="158">CDGDASCPQGHKCCSTGCGRTC</matchSeq>
+     </alignment>
+     <alignment number="7">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>37.0</identity>
+      <positives>51.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="74">CQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>C T+E C     CC   C +SC  P++</pattern>
+      <matchSeq start="89" end="115">CITDETCPGVKKCCTLGCNKSCVVPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="SP" id="UROL1_MOUSE" ac="Q5DID3" length="1319" description="Uromodulin-like 1 OS=Mus musculus GN=Umodl1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>39.4429</bits>
+      <expectation>0.02</expectation>
+      <identity>43.8</identity>
+      <positives>53.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="128">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEP</querySeq>
+      <pattern>P    CS+D+DCSG  KCC       C+ P P</pattern>
+      <matchSeq start="129" end="160">PLSPSCSLDTDCSGLQKCCSWPGGRHCVSPTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="SP" id="PPN_DROME" ac="Q868Z9" length="2898" description="Papilin OS=Drosophila melanogaster GN=Ppn PE=1 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>79</score>
+      <bits>39.4429</bits>
+      <expectation>0.02</expectation>
+      <identity>48.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D+DC G  KCC +GC   C+ P</pattern>
+      <matchSeq start="2473" end="2497">CYTDADCRGDNKCCSDGCGQLCVHP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>36.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C T+ +C  ++ CC   CG+ C  P</pattern>
+      <matchSeq start="2473" end="2497">CYTDADCRGDNKCCSDGCGQLCVHP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="SP" id="WFDC2_CANLF" ac="Q28894" length="124" description="WAP four-disulfide core domain protein 2 OS=Canis lupus familiaris GN=WFDC2 PE=2 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>78</score>
+      <bits>38.9807</bits>
+      <expectation>0.028</expectation>
+      <identity>61.1</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="119">CSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>C +DS C G +KCC NGC</pattern>
+      <matchSeq start="97" end="114">CQVDSHCPGLLKCCYNGC</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>70</score>
+      <bits>35.2827</bits>
+      <expectation>0.36</expectation>
+      <identity>39.3</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  D+ C+  +KCC+ GC   C  P  K</pattern>
+      <matchSeq start="49" end="76">CVSDAQCADNLKCCQAGCATICHLPNEK</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>36.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C ++ +CA N  CC + C   C  P</pattern>
+      <matchSeq start="49" end="73">CVSDAQCADNLKCCQAGCATICHLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="SP" id="WF15A_MOUSE" ac="Q8BH89" length="80" description="WAP four-disulfide core domain protein 15A OS=Mus musculus GN=Wfdc15a PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>38.9807</bits>
+      <expectation>0.028</expectation>
+      <identity>52.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>CS D  C GT KCC   C M C++P</pattern>
+      <matchSeq start="51" end="75">CSRDKGCKGTKKCCFYYCQMRCVEP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="SP" id="WAPB_CRYNI" ac="B5L5N6" length="75" description="Nigwaprin-b OS=Cryptophis nigrescens PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>38.9807</bits>
+      <expectation>0.028</expectation>
+      <identity>48.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C    KCC+ GCI  C DP</pattern>
+      <matchSeq start="47" end="71">CKNDRSCPREQKCCRYGCIYECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="SP" id="WAPA_OXYMI" ac="P83952" length="50" description="Omwaprin-a OS=Oxyuranus microlepidotus PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>38.0562</bits>
+      <expectation>0.053</expectation>
+      <identity>48.0</identity>
+      <positives>48.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C G  KCC  GC   C DP</pattern>
+      <matchSeq start="22" end="46">CKNDDSCPGQQKCCNYGCKDECRDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="SP" id="SLPI_SHEEP" ac="Q6V9X0" length="132" description="Antileukoproteinase OS=Ovis aries GN=SLPI PE=1 SV=1">
+    <alignments total="4">
+     <alignment number="1">
+      <score>76</score>
+      <bits>38.0562</bits>
+      <expectation>0.053</expectation>
+      <identity>44.4</identity>
+      <positives>51.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D  C G +KCCK  C   C+ P</pattern>
+      <matchSeq start="103" end="129">NHCETDDQCIGALKCCKAMCGKVCLSP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>73</score>
+      <bits>36.6694</bits>
+      <expectation>0.14</expectation>
+      <identity>39.3</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="75">CQTNEECAQNDMCCPSSCGRSCKTPVNI</querySeq>
+      <pattern>C ++ +C     CC  +CG  C  PVNI</pattern>
+      <matchSeq start="51" end="78">CSSDWQCPHKKKCCLDTCGTECLDPVNI</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>72</score>
+      <bits>36.2072</bits>
+      <expectation>0.19</expectation>
+      <identity>37.0</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="73">NCQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>+C+T+++C     CC + CG+ C +PV</pattern>
+      <matchSeq start="104" end="130">HCETDDQCIGALKCCKAMCGKVCLSPV</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>66</score>
+      <bits>33.4337</bits>
+      <expectation>1.3</expectation>
+      <identity>44.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>CS D  C    KCC + C   C+DP</pattern>
+      <matchSeq start="51" end="75">CSSDWQCPHKKKCCLDTCGTECLDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="SP" id="WFD12_LEMCA" ac="A4K2S4" length="148" description="WAP four-disulfide core domain protein 12 OS=Lemur catta GN=WFDC12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>42.3</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="127">CSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>C  D+DC G  KCC   C   C+ P+</pattern>
+      <matchSeq start="49" end="74">CHADNDCPGDKKCCFLSCSFKCVSPD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="SP" id="WAP3_PIG" ac="Q29126" length="144" description="Protein WAP-3 OS=Sus scrofa PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>44.4</identity>
+      <positives>51.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="46" end="72">INCQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>I C  +  C     CCPS CG+ C TP</pattern>
+      <matchSeq start="117" end="143">IKCWRDSHCPGVKKCCPSLCGKGCVTP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>44.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  DS C G  KCC + C   C+ P</pattern>
+      <matchSeq start="119" end="143">CWRDSHCPGVKKCCPSLCGKGCVTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="SP" id="WAP1_THRJA" ac="A7X4I7" length="70" description="Waprin-Thr1 OS=Thrasops jacksonii PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>60.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="119">NPCSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>N C  DS C    KCCKNGC</pattern>
+      <matchSeq start="42" end="61">NMCESDSGCPNNEKCCKNGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="SP" id="WAP1_RHATT" ac="A7X4J4" length="76" description="Waprin-Rha1 OS=Rhabdophis tigrinus tigrinus PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>61.1</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="119">CSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>C+ DS+C    KCCKNGC</pattern>
+      <matchSeq start="49" end="66">CATDSNCPDIQKCCKNGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="SP" id="SLPI_MOUSE" ac="P97430" length="131" description="Antileukoproteinase OS=Mus musculus GN=Slpi PE=1 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>42.9</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="75">CQTNEECAQNDMCCPSSCGRSCKTPVNI</querySeq>
+      <pattern>C+T+ EC     CC  +CG  C  PV I</pattern>
+      <matchSeq start="52" end="79">CRTDWECPGKQRCCQDACGSKCVNPVPI</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>74</score>
+      <bits>37.1317</bits>
+      <expectation>0.1</expectation>
+      <identity>37.0</identity>
+      <positives>59.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="128">CSIDSDCSGTMKCCKNGCIMSCMDPEP</querySeq>
+      <pattern>C  D +C G  +CC++ C   C++P P</pattern>
+      <matchSeq start="52" end="78">CRTDWECPGKQRCCQDACGSKCVNPVP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>40.7</identity>
+      <positives>48.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D  C G  KCC+  C   C+ P</pattern>
+      <matchSeq start="104" end="130">NVCQRDGQCDGKYKCCEGICGKVCLPP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="SP" id="SLPI_HUMAN" ac="P03973" length="132" description="Antileukoproteinase OS=Homo sapiens GN=SLPI PE=1 SV=2">
+    <alignments total="4">
+     <alignment number="1">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>40.7</identity>
+      <positives>59.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="74">CQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>CQ++ +C     CCP +CG  C  PV+</pattern>
+      <matchSeq start="51" end="77">CQSDWQCPGKKRCCPDTCGIKCLDPVD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>71</score>
+      <bits>35.7449</bits>
+      <expectation>0.26</expectation>
+      <identity>37.9</identity>
+      <positives>51.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="98" end="126">KDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>K   C  D  C G  +CC + C + C+DP</pattern>
+      <matchSeq start="47" end="75">KKPECQSDWQCPGKKRCCPDTCGIKCLDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>71</score>
+      <bits>35.7449</bits>
+      <expectation>0.26</expectation>
+      <identity>38.5</identity>
+      <positives>65.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C+ + +C ++  CC   CG+SC +PV</pattern>
+      <matchSeq start="105" end="130">CEMDGQCKRDLKCCMGMCGKSCVSPV</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>70</score>
+      <bits>35.2827</bits>
+      <expectation>0.36</expectation>
+      <identity>40.7</identity>
+      <positives>51.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C +D  C   +KCC   C  SC+ P</pattern>
+      <matchSeq start="103" end="129">NFCEMDGQCKRDLKCCMGMCGKSCVSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="SP" id="PWAP_HALLA" ac="P84811" length="134" description="Perlwapin OS=Haliotis laevigata PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>37.5939</bits>
+      <expectation>0.073</expectation>
+      <identity>46.7</identity>
+      <positives>46.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="98" end="127">KDNPCSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>K N CS D DC G  KCC       C  PE</pattern>
+      <matchSeq start="60" end="89">KGNVCSNDQDCPGNQKCCGKPGCRRCYRPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="SP" id="WFDC3_MOUSE" ac="Q14AE4" length="130" description="WAP four-disulfide core domain protein 3 OS=Mus musculus GN=Wfdc3 PE=2 SV=1">
+    <alignments total="4">
+     <alignment number="1">
+      <score>74</score>
+      <bits>37.1317</bits>
+      <expectation>0.1</expectation>
+      <identity>41.7</identity>
+      <positives>54.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="46" end="69">INCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>+ C  +E C   + CC S CGR C</pattern>
+      <matchSeq start="79" end="102">VQCMMDENCQSGERCCKSGCGRFC</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>39.1</identity>
+      <positives>56.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="70">CQTNEECAQNDMCCPSSCGRSCK</querySeq>
+      <pattern>C  +E C Q   CC + CG +C+</pattern>
+      <matchSeq start="36" end="58">CTGDESCPQGHKCCSTGCGHACR</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>66</score>
+      <bits>33.4337</bits>
+      <expectation>1.3</expectation>
+      <identity>38.7</identity>
+      <positives>45.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="93" end="123">AGPCPKDNPCSIDSDCSGTMKCCKNGCIMSC</querySeq>
+      <pattern>A P P    C+ D  C    KCC  GC  +C</pattern>
+      <matchSeq start="27" end="57">ADPLPCQELCTGDESCPQGHKCCSTGCGHAC</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>39.1</identity>
+      <positives>60.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C +D +C    +CCK+GC   C+</pattern>
+      <matchSeq start="81" end="103">CMMDENCQSGERCCKSGCGRFCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="SP" id="WAPN_NAJNG" ac="P60589" length="51" description="Nawaprin OS=Naja nigricollis PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>37.1317</bits>
+      <expectation>0.1</expectation>
+      <identity>61.1</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="119">CSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>C+ DS C    KCCKNGC</pattern>
+      <matchSeq start="24" end="41">CNSDSGCPNVQKCCKNGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="SP" id="KRA15_HUMAN" ac="Q9BYS1" length="174" description="Keratin-associated protein 1-5 OS=Homo sapiens GN=KRTAP1-5 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>37.1317</bits>
+      <expectation>0.1</expectation>
+      <identity>30.0</identity>
+      <positives>38.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="32" end="81">SMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTPVNIEVQKAG</querySeq>
+      <pattern>S C   SFS    C +      C +   C PS C  SC  P   ++   G</pattern>
+      <matchSeq start="43" end="92">SFCGFPSFSTSGTCSSSCCQPSCCETSCCQPSCCETSCCQPSCCQISSCG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="SP" id="WFDC8_HUMAN" ac="Q8IUA0" length="241" description="WAP four-disulfide core domain protein 8 OS=Homo sapiens GN=WFDC8 PE=2 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>73</score>
+      <bits>36.6694</bits>
+      <expectation>0.14</expectation>
+      <identity>48.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C+ D DC    KCC   C   CMDP</pattern>
+      <matchSeq start="66" end="90">CNTDFDCKEYQKCCFFACQKKCMDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>43.5</identity>
+      <positives>60.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="69">NCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>+C ++ +C Q D CC S CG  C</pattern>
+      <matchSeq start="168" end="190">SCHSDIDCPQTDKCCESRCGFVC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="SP" id="WFD18_RAT" ac="P14730" length="74" description="WAP four-disulfide core domain protein 18 (Fragment) OS=Rattus norvegicus GN=Wfdc18 PE=2 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>73</score>
+      <bits>36.6694</bits>
+      <expectation>0.14</expectation>
+      <identity>48.0</identity>
+      <positives>48.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>CS D  C    KCC NGC   C  P</pattern>
+      <matchSeq start="48" end="72">CSGDQSCPNIQKCCSNGCGHVCKSP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>71</score>
+      <bits>35.7449</bits>
+      <expectation>0.26</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C  ++ C     CC + CG  CK+PV</pattern>
+      <matchSeq start="48" end="73">CSGDQSCPNIQKCCSNGCGHVCKSPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="SP" id="WFDC8_MOUSE" ac="Q4KUS1" length="273" description="WAP four-disulfide core domain protein 8 OS=Mus musculus GN=Wfdc8 PE=2 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>72</score>
+      <bits>36.2072</bits>
+      <expectation>0.19</expectation>
+      <identity>44.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D +C    KCC+  C   CMDP</pattern>
+      <matchSeq start="98" end="122">CKTDFNCKAHFKCCQFACGRKCMDP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>38.5</identity>
+      <positives>57.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="72">NCQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>+C+T+  C  +  CC  +CGR C  P</pattern>
+      <matchSeq start="97" end="122">SCKTDFNCKAHFKCCQFACGRKCMDP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>34.8</identity>
+      <positives>60.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="69">NCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>+C+ + +C + + CC S CG  C</pattern>
+      <matchSeq start="200" end="222">SCKNDMDCPEKEKCCESRCGFIC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="SP" id="SPAI_PIG" ac="P16225" length="187" description="Sodium/potassium ATPase inhibitor SPAI-2 OS=Sus scrofa PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>72</score>
+      <bits>36.2072</bits>
+      <expectation>0.19</expectation>
+      <identity>42.9</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="127">NPCSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>N C  D DC G  KCC+  C   C+ P+</pattern>
+      <matchSeq start="160" end="187">NKCWRDYDCPGVKKCCEGFCGKDCLYPK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="SP" id="MIPR_LYMST" ac="Q25410" length="1607" description="Putative molluscan insulin-related peptide(s) receptor OS=Lymnaea stagnalis PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>71</score>
+      <bits>35.7449</bits>
+      <expectation>0.26</expectation>
+      <identity>40.7</identity>
+      <positives>51.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="74">CQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>C+ N  C +N  CC   C   CK P+N</pattern>
+      <matchSeq start="236" end="262">CKENTYCMENGSCCHDYCLGGCKVPMN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="SP" id="IBP_CARCR" ac="P00993" length="110" description="Chelonianin OS=Caretta caretta PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>71</score>
+      <bits>35.7449</bits>
+      <expectation>0.26</expectation>
+      <identity>44.4</identity>
+      <positives>51.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="128">CSIDSDCSGTMKCCKNGCIMSCMDPEP</querySeq>
+      <pattern>C  DSDC    KCC +GC   C+   P</pattern>
+      <matchSeq start="80" end="106">CDSDSDCKEGQKCCFDGCGYICLTVAP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="SP" id="CALU_CAVPO" ac="P22075" length="55" description="Caltrin-like protein 2 OS=Cavia porcellus PE=1 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>71</score>
+      <bits>35.7449</bits>
+      <expectation>0.26</expectation>
+      <identity>42.9</identity>
+      <positives>46.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="127">NPCSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>N C+ D DC    KCC   C   C  PE</pattern>
+      <matchSeq start="28" end="55">NKCTSDYDCPKPQKCCPGYCGKQCYQPE</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>69</score>
+      <bits>34.8204</bits>
+      <expectation>0.5</expectation>
+      <identity>36.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C ++ +C +   CCP  CG+ C  P</pattern>
+      <matchSeq start="30" end="54">CTSDYDCPKPQKCCPGYCGKQCYQP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="SP" id="WFKN2_MOUSE" ac="Q7TQN3" length="571" description="WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 2 OS=Mus musculus GN=Wfikkn2 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>69</score>
+      <bits>34.8204</bits>
+      <expectation>0.5</expectation>
+      <identity>47.4</identity>
+      <positives>73.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="66">CQTNEECAQNDMCCPSSCG</querySeq>
+      <pattern>C+T++EC   + CCP+ CG</pattern>
+      <matchSeq start="61" end="79">CETDQECETYEKCCPNVCG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="SP" id="WFKN2_HUMAN" ac="Q8TEU8" length="576" description="WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 2 OS=Homo sapiens GN=WFIKKN2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>69</score>
+      <bits>34.8204</bits>
+      <expectation>0.5</expectation>
+      <identity>47.4</identity>
+      <positives>73.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="66">CQTNEECAQNDMCCPSSCG</querySeq>
+      <pattern>C+T++EC   + CCP+ CG</pattern>
+      <matchSeq start="66" end="84">CETDQECETYEKCCPNVCG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="SP" id="WFKN2_BOVIN" ac="Q08E66" length="574" description="WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 2 OS=Bos taurus GN=WFIKKN2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>69</score>
+      <bits>34.8204</bits>
+      <expectation>0.5</expectation>
+      <identity>47.4</identity>
+      <positives>73.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="66">CQTNEECAQNDMCCPSSCG</querySeq>
+      <pattern>C+T++EC   + CCP+ CG</pattern>
+      <matchSeq start="64" end="82">CETDQECETYEKCCPNVCG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="SP" id="WAP1_PSEPL" ac="A7X4M1" length="118" description="Waprin-Enh1 OS=Pseudoferania polylepis PE=2 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>69</score>
+      <bits>34.8204</bits>
+      <expectation>0.5</expectation>
+      <identity>44.4</identity>
+      <positives>51.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC  T++CC   C  SC  P</pattern>
+      <matchSeq start="48" end="74">NRCRRDYDCPQTLRCCNFRCSRSCRIP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>66</score>
+      <bits>33.4337</bits>
+      <expectation>1.3</expectation>
+      <identity>40.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C+ + +C Q   CC   C RSC+ P</pattern>
+      <matchSeq start="50" end="74">CRRDYDCPQTLRCCNFRCSRSCRIP</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>37.0</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="123">PKDNPCSIDSDCSGTMKCCKNGCIMSC</querySeq>
+      <pattern>P  + C  D DC G  +CC   C   C</pattern>
+      <matchSeq start="91" end="117">PGIDRCRYDYDCPGRQRCCYYSCSRIC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="SP" id="WAP1_ERYPO" ac="A7X4L4" length="60" description="Waprin-Lio1 (Fragment) OS=Erythrolamprus poecilogyrus PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>69</score>
+      <bits>34.8204</bits>
+      <expectation>0.5</expectation>
+      <identity>55.6</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="119">CSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>C  D++C    KCCKNGC</pattern>
+      <matchSeq start="33" end="50">CQTDANCQEGRKCCKNGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="SP" id="WFD12_PAPAN" ac="A4K2M6" length="111" description="WAP four-disulfide core domain protein 12 OS=Papio anubis GN=WFDC12 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>42.9</identity>
+      <positives>46.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P  K</pattern>
+      <matchSeq start="49" end="76">CHTDQDCLGARKCCYLHCGFKCVIPVKK</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCLGARKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="SP" id="WF10A_HUMAN" ac="Q9H1F0" length="79" description="WAP four-disulfide core domain protein 10A OS=Homo sapiens GN=WFDC10A PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>36.4</identity>
+      <positives>68.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="69">CQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>C+++ +C  N++CC + CG  C</pattern>
+      <matchSeq start="54" end="75">CESHRDCQANNICCSTYCGNVC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="SP" id="SLIT_DROME" ac="P24014" length="1504" description="Protein slit OS=Drosophila melanogaster GN=sli PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>32.4</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="82" end="115">RCPWNPIQMIAAGPCPKDNPCSIDSDCSGTMKCC</querySeq>
+      <pattern>+C W+ ++M  +G C  D+ C     C GT   C</pattern>
+      <matchSeq start="523" end="556">KCSWDELRMKLSGECRMDSDCPAMCHCEGTTVDC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="SP" id="SET2_NEUCR" ac="Q7RZU4" length="954" description="Histone-lysine N-methyltransferase, H3 lysine-36 specific OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987) GN=set-2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>48.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="41" end="65">EDTECINCQTNEECAQNDMCCPSSC</querySeq>
+      <pattern>ED++CIN  T  EC   D  C S C</pattern>
+      <matchSeq start="147" end="171">EDSDCINRATKMECVDGDCNCGSGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="SP" id="EPPI_RAT" ac="D4A2Z2" length="134" description="Eppin OS=Rattus norvegicus GN=Eppin PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>68</score>
+      <bits>34.3582</bits>
+      <expectation>0.69</expectation>
+      <identity>36.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C + + CC  SCG+ C  P</pattern>
+      <matchSeq start="48" end="72">CTRDRDCQKREKCCIFSCGKKCLNP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="127">CSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>C+ D DC    KCC   C   C++P+</pattern>
+      <matchSeq start="48" end="73">CTRDRDCQKREKCCIFSCGKKCLNPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="SP" id="WFD12_SAIBB" ac="A4K2X6" length="111" description="WAP four-disulfide core domain protein 12 OS=Saimiri boliviensis boliviensis GN=WFDC12 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>44.0</identity>
+      <positives>48.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P</pattern>
+      <matchSeq start="49" end="73">CHTDQDCQGIRKCCYLHCGFKCVIP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCQGIRKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="SP" id="WFD12_MACMU" ac="A4K2T3" length="111" description="WAP four-disulfide core domain protein 12 OS=Macaca mulatta GN=WFDC12 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>42.9</identity>
+      <positives>46.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P  K</pattern>
+      <matchSeq start="49" end="76">CHTDQDCLGERKCCYLHCGFKCVIPVKK</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCLGERKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="SP" id="WFD12_COLGU" ac="A4K2P8" length="111" description="WAP four-disulfide core domain protein 12 OS=Colobus guereza GN=WFDC12 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>42.9</identity>
+      <positives>46.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P  K</pattern>
+      <matchSeq start="49" end="76">CHTDQDCLGERKCCYLHCGFKCVIPVKK</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCLGERKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="SP" id="WFD12_CHLAE" ac="A4K2Y4" length="111" description="WAP four-disulfide core domain protein 12 OS=Chlorocebus aethiops GN=WFDC12 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>42.9</identity>
+      <positives>46.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="129">CSIDSDCSGTMKCCKNGCIMSCMDPEPK</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P  K</pattern>
+      <matchSeq start="49" end="76">CHTDQDCLGERKCCYLHCGFKCVIPVKK</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCLGERKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="SP" id="WFD12_CALJA" ac="A4K2U1" length="111" description="WAP four-disulfide core domain protein 12 OS=Callithrix jacchus GN=WFDC12 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>44.0</identity>
+      <positives>48.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P</pattern>
+      <matchSeq start="49" end="73">CHTDQDCQGIRKCCYLHCGFKCVIP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCQGIRKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="SP" id="WFD12_AOTNA" ac="A4K2W8" length="92" description="WAP four-disulfide core domain protein 12 OS=Aotus nancymaae GN=WFDC12 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>44.0</identity>
+      <positives>48.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P</pattern>
+      <matchSeq start="49" end="73">CHTDQDCQGIRKCCYLHCGFKCVIP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCQGIRKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="SP" id="WF15B_MOUSE" ac="Q9JHY4" length="80" description="WAP four-disulfide core domain protein 15B OS=Mus musculus GN=Wfdc15b PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>44.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D  C   +KCC   C M C+DP</pattern>
+      <matchSeq start="51" end="75">CRRDKGCKDALKCCFFYCQMRCVDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="SP" id="TXF18_LYCSI" ac="B6DD51" length="87" description="U15-lycotoxin-Ls1h OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNFCKYPTD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNFCKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="SP" id="TXF17_LYCSI" ac="B6DD50" length="86" description="U15-lycotoxin-Ls1g OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNFCKYPAD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNFCKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="SP" id="TXF16_LYCSI" ac="B6DD49" length="86" description="U15-lycotoxin-Ls1d OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNFCKYPTD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNFCKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="SP" id="TXF15_LYCSI" ac="B6DD48" length="87" description="U15-lycotoxin-Ls1f OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNFCKYPTD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNFCKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="SP" id="TXF14_LYCSI" ac="B6DD47" length="86" description="U15-lycotoxin-Ls1e OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNFCKYPTD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNFCKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="SP" id="TXF13_LYCSI" ac="B6DD46" length="86" description="U15-lycotoxin-Ls1d OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNFCKYPTD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNFCKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="SP" id="TXF12_LYCSI" ac="B6DD45" length="86" description="U15-lycotoxin-Ls1c OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNICKYPTD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNICKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="SP" id="TXF10_LYCSI" ac="B6DD43" length="86" description="U15-lycotoxin-Ls1a OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNFCKYPTD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNFCKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="SP" id="TXF09_LYCSI" ac="B6DD42" length="86" description="U15-lycotoxin-Ls1d OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNFCKYPTD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNFCKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="SP" id="TXF08_LYCSI" ac="B6DD41" length="86" description="U15-lycotoxin-Ls1d OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNFCKYPTD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNFCKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="SP" id="TXF07_LYCSI" ac="B6DD40" length="87" description="U15-lycotoxin-Ls1f OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>32.1</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="74">NCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+C  +++C     CC + CG  CK P +</pattern>
+      <matchSeq start="40" end="67">DCCKDDDCTGGSWCCATPCGNFCKYPTD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="126">NPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>N C  D DC+G   CC   C   C  P</pattern>
+      <matchSeq start="39" end="65">NDCCKDDDCTGGSWCCATPCGNFCKYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="SP" id="PWAPL_LOTGI" ac="B3A0S1" length="225" description="Perlwapin-like protein (Fragment) OS=Lottia gigantea PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>67</score>
+      <bits>33.8959</bits>
+      <expectation>0.95</expectation>
+      <identity>60.0</identity>
+      <positives>73.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="60" end="74">CCPSSCGRSCKTPVN</querySeq>
+      <pattern>CCP  CG+ CK P+N</pattern>
+      <matchSeq start="156" end="170">CCPDVCGKRCKFPIN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="SP" id="TXAG7_AGEOR" ac="Q5Y4V9" length="102" description="U7-agatoxin-Ao1a OS=Agelena orientalis PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>66</score>
+      <bits>33.4337</bits>
+      <expectation>1.3</expectation>
+      <identity>39.1</identity>
+      <positives>60.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="70">CQTNEECAQNDMCCPSSCGRSCK</querySeq>
+      <pattern>C +++EC   +MCC   CG  C+</pattern>
+      <matchSeq start="42" end="64">CCSSKECRFGEMCCSEPCGNVCR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="SP" id="KRA98_HUMAN" ac="Q9BYQ0" length="159" description="Keratin-associated protein 9-8 OS=Homo sapiens GN=KRTAP9-8 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>66</score>
+      <bits>33.4337</bits>
+      <expectation>1.3</expectation>
+      <identity>26.0</identity>
+      <positives>36.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="26" end="75">VFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTPVNI</querySeq>
+      <pattern>V +  Q  C      + T C        C Q+  C P  C R+C  P  +</pattern>
+      <matchSeq start="62" end="111">VTSCCQPSCCSTPCCQPTCCGQTSCGSSCGQSSSCAPVYCRRTCYHPTTV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="SP" id="EPPI_MOUSE" ac="Q9DA01" length="134" description="Eppin OS=Mus musculus GN=Eppin PE=1 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>66</score>
+      <bits>33.4337</bits>
+      <expectation>1.3</expectation>
+      <identity>32.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="72">CQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C  + +C + + CC  +CG+ C  P</pattern>
+      <matchSeq start="48" end="72">CTRDRDCPKKEKCCVFNCGKKCLNP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="127">CSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>C+ D DC    KCC   C   C++P+</pattern>
+      <matchSeq start="48" end="73">CTRDRDCPKKEKCCVFNCGKKCLNPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="SP" id="EPPI_MACMU" ac="Q9BDL1" length="133" description="Eppin OS=Macaca mulatta GN=EPPIN PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>66</score>
+      <bits>33.4337</bits>
+      <expectation>1.3</expectation>
+      <identity>40.9</identity>
+      <positives>54.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="69">CQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>C  + +C  N  CC  SCG+ C</pattern>
+      <matchSeq start="48" end="69">CTRHRQCPDNKKCCVFSCGKKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="SP" id="EPPI_HUMAN" ac="O95925" length="133" description="Eppin OS=Homo sapiens GN=EPPIN PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>66</score>
+      <bits>33.4337</bits>
+      <expectation>1.3</expectation>
+      <identity>40.9</identity>
+      <positives>54.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="69">CQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>C  + +C  N  CC  SCG+ C</pattern>
+      <matchSeq start="48" end="69">CTKDRQCQDNKKCCVFSCGKKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="SP" id="WFKN_DANRE" ac="Q6NUX0" length="558" description="WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein OS=Danio rerio GN=wfikkn PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>47.6</identity>
+      <positives>57.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="99" end="119">DNPCSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>+  C  D DCS + KCC N C</pattern>
+      <matchSeq start="46" end="66">ERECHSDQDCSSSEKCCTNVC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="SP" id="WFD12_PONAB" ac="A4K2V4" length="90" description="WAP four-disulfide core domain protein 12 OS=Pongo abelii GN=WFDC12 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>44.0</identity>
+      <positives>48.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P</pattern>
+      <matchSeq start="49" end="73">CHTDQDCLGERKCCYLHCGFKCVIP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCLGERKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="SP" id="WFD12_PANTR" ac="A4K2P0" length="111" description="WAP four-disulfide core domain protein 12 OS=Pan troglodytes GN=WFDC12 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>44.0</identity>
+      <positives>48.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P</pattern>
+      <matchSeq start="49" end="73">CHTDQDCLGERKCCYLHCGFKCVIP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCLGERKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="SP" id="WFD12_HUMAN" ac="Q8WWY7" length="111" description="WAP four-disulfide core domain protein 12 OS=Homo sapiens GN=WFDC12 PE=1 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>44.0</identity>
+      <positives>48.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P</pattern>
+      <matchSeq start="49" end="73">CHTDQDCLGERKCCYLHCGFKCVIP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCLGERKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="SP" id="WFD12_GORGO" ac="A4K2R5" length="90" description="WAP four-disulfide core domain protein 12 OS=Gorilla gorilla gorilla GN=WFDC12 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>44.0</identity>
+      <positives>48.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="126">CSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  D DC G  KCC   C   C+ P</pattern>
+      <matchSeq start="49" end="73">CHTDQDCLGERKCCYLHCGFKCVIP</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C T+++C     CC   CG  C  PV</pattern>
+      <matchSeq start="49" end="74">CHTDQDCLGERKCCYLHCGFKCVIPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="SP" id="TXE06_LYCSI" ac="B6DD39" length="87" description="U14-lycotoxin-Ls1c OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>39.1</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="69">NCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>NC  + +C  N  CC   CG  C</pattern>
+      <matchSeq start="40" end="62">NCCRDSDCTSNAFCCAEPCGNFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="SP" id="TXE05_LYCSI" ac="B6DD38" length="87" description="U14-lycotoxin-Ls1a OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>39.1</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="69">NCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>NC  + +C  N  CC   CG  C</pattern>
+      <matchSeq start="40" end="62">NCCRDSDCTSNAFCCAEPCGNFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="SP" id="TXE04_LYCSI" ac="B6DD37" length="87" description="U14-lycotoxin-Ls1b OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>39.1</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="69">NCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>NC  + +C  N  CC   CG  C</pattern>
+      <matchSeq start="40" end="62">NCCRDSDCTSNAFCCAEPCGNFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="SP" id="TXE03_LYCSI" ac="B6DD36" length="87" description="U14-lycotoxin-Ls1b OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>39.1</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="69">NCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>NC  + +C  N  CC   CG  C</pattern>
+      <matchSeq start="40" end="62">NCCRDSDCTSNAFCCAEPCGNFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="SP" id="TXE02_LYCSI" ac="B6DD35" length="87" description="U14-lycotoxin-Ls1a OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>39.1</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="69">NCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>NC  + +C  N  CC   CG  C</pattern>
+      <matchSeq start="40" end="62">NCCRDSDCTSNAFCCAEPCGNFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="SP" id="TXE01_LYCSI" ac="B6DD34" length="87" description="U14-lycotoxin-Ls1a OS=Lycosa singoriensis PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>39.1</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="69">NCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>NC  + +C  N  CC   CG  C</pattern>
+      <matchSeq start="40" end="62">NCCRDSDCTSNAFCCAEPCGNFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="SP" id="SP3_CHICK" ac="Q90WR8" length="771" description="Transcription factor Sp3 OS=Gallus gallus GN=SP3 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>28.8</identity>
+      <positives>47.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="6" end="64">SLVLGLLALEVALARNLQEHVFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSS</querySeq>
+      <pattern>SL LG  +  +    N   H+ N+ Q+M S D+     E ++ +  E    ND+  P+S</pattern>
+      <matchSeq start="267" end="325">SLGLGSGSQTMTAGINADGHLINTGQAMDSSDNSERTGEQVSPEITETATDNDLFVPTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="SP" id="KRA52_MOUSE" ac="Q9D5Z7" length="189" description="Keratin-associated protein 5-2 OS=Mus musculus GN=Krtap5-2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>65</score>
+      <bits>32.9714</bits>
+      <expectation>1.8</expectation>
+      <identity>31.0</identity>
+      <positives>38.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="31" end="72">QSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>QS C      + + C  C     C Q+  C P  C  SC  P</pattern>
+      <matchSeq start="131" end="172">QSSCCKPCCCQSSCCKPCCCQSSCCQSSCCKPCCCQSSCCKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="SP" id="YL264_MIMIV" ac="Q5UPU7" length="1389" description="Uncharacterized WD repeat-containing protein L264 OS=Acanthamoeba polyphaga mimivirus GN=MIMI_L264 PE=1 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>28.9</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="22" end="66">LQEHVFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCG</querySeq>
+      <pattern>L++ V     +   D   SE +EC       +C  N  CC ++CG</pattern>
+      <matchSeq start="80" end="124">LEKTVKKKKSNCSDDSECSECSECSERSCCSKCNSNKCCCNNTCG</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="98" end="123">KDNPCSIDSDCSGTMKCCKNGCIMSC</querySeq>
+      <pattern>K + CS DS+CS   +C +  C   C</pattern>
+      <matchSeq start="87" end="112">KKSNCSDDSECSECSECSERSCCSKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="SP" id="WFD12_MOUSE" ac="Q9JHY3" length="85" description="WAP four-disulfide core domain protein 12 OS=Mus musculus GN=Wfdc12 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>34.6</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C ++ +C   ++CC   CG  C  PV</pattern>
+      <matchSeq start="47" end="72">CYSDNDCGDQEICCFWQCGFKCVLPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="SP" id="SAE1_XENTR" ac="Q28DS0" length="347" description="SUMO-activating enzyme subunit 1 OS=Xenopus tropicalis GN=sae1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>31.4</identity>
+      <positives>52.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="17" end="67">ALARNLQEHVFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGR</querySeq>
+      <pattern>+L +N  E   N  +++    S   DTE IN ++++   Q D+ C +SC R</pattern>
+      <matchSeq start="84" end="134">SLGQNRAEASLNRARNLNPMVSVEADTENINQKSDDFFTQFDVVCLTSCSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="SP" id="PWAP_HALAI" ac="P86730" length="152" description="Perlwapin (Fragment) OS=Haliotis asinina PE=1 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>36.7</identity>
+      <positives>46.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="98" end="127">KDNPCSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>+ N C+ D DC G  KCC       C  P+</pattern>
+      <matchSeq start="78" end="107">RGNVCNNDQDCPGNRKCCGKPGCKRCYRPK</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>39.1</identity>
+      <positives>52.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="124">CSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>C  D DC+    CC  GC+  C+</pattern>
+      <matchSeq start="39" end="61">CYSDRDCASGYYCCNTGCLNICV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="SP" id="LET23_CAEEL" ac="P24348" length="1323" description="Receptor tyrosine-protein kinase let-23 OS=Caenorhabditis elegans GN=let-23 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>26.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="86" end="130">NPIQMIAAGPCPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEPKS</querySeq>
+      <pattern>N  Q +    CPK       S+ + + +CC + C+  C    PK+</pattern>
+      <matchSeq start="234" end="278">NDCQRVYRSVCPKSCSQCFYSNSTSSYECCDSACLGGCTGHGPKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="SP" id="KRA46_HUMAN" ac="Q9BYQ5" length="205" description="Keratin-associated protein 4-6 OS=Homo sapiens GN=KRTAP4-6 PE=2 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>34.1</identity>
+      <positives>41.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="32" end="72">SMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>S+CSD     +T C        C +   C PS C  SC  P</pattern>
+      <matchSeq start="8" end="48">SVCSDQGCGLETCCRPSCCQTTCCRTTCCRPSCCVSSCCRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="SP" id="CHIT_PHAVU" ac="P06215" length="328" description="Endochitinase OS=Phaseolus vulgaris PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>39.4</identity>
+      <positives>39.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="96" end="128">CPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEP</querySeq>
+      <pattern>CP  N CS    C  T   C  GC   C  P P</pattern>
+      <matchSeq start="39" end="71">CPGGNCCSQFGWCGSTTDYCGPGCQSQCGGPSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="SP" id="CASA2_BOVIN" ac="P02663" length="222" description="Alpha-S2-casein OS=Bos taurus GN=CSN1S2 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>64</score>
+      <bits>32.5091</bits>
+      <expectation>2.5</expectation>
+      <identity>41.4</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="14" end="42">LEVALARNLQEHVFNSVQSMCSDDSFSED</querySeq>
+      <pattern>L VALA+N  EHV +S +S+ S +++ ++</pattern>
+      <matchSeq start="10" end="38">LAVALAKNTMEHVSSSEESIISQETYKQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="SP" id="WFKN1_RAT" ac="P0C5J5" length="552" description="WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 1 OS=Rattus norvegicus GN=Wfikkn1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>42.9</identity>
+      <positives>61.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="99" end="119">DNPCSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>+  C+ D DC+ + KCC N C</pattern>
+      <matchSeq start="53" end="73">ERECTRDQDCAASEKCCTNVC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="146" database="SP" id="WFKN1_HUMAN" ac="Q96NZ8" length="548" description="WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 1 OS=Homo sapiens GN=WFIKKN1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>47.6</identity>
+      <positives>57.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="99" end="119">DNPCSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>+  CS D DC+   KCC N C</pattern>
+      <matchSeq start="50" end="70">ERECSRDQDCAAAEKCCINVC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="147" database="SP" id="SPHR_AMEPV" ac="P29815" length="1003" description="Spheroidin OS=Amsacta moorei entomopoxvirus GN=AMV187 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>25.0</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="24" end="67">EHVFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGR</querySeq>
+      <pattern>E+V +  Q  C+ ++F  +T C+     +   +N     ++CGR</pattern>
+      <matchSeq start="884" end="927">EYVHHRYQESCTPNTFGNNTNCVTRNGEQHVYENSCGDNATCGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="148" database="SP" id="SET2_CHAGB" ac="Q2H988" length="894" description="Histone-lysine N-methyltransferase, H3 lysine-36 specific OS=Chaetomium globosum (strain ATCC 6205 / CBS 148.51 / DSM 1962 / NBRC 6347 / NRRL 1970) GN=SET2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>44.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="41" end="65">EDTECINCQTNEECAQNDMCCPSSC</querySeq>
+      <pattern>ED++CIN  T  EC   D  C   C</pattern>
+      <matchSeq start="93" end="117">EDSDCINRATKIECVSGDCNCGEGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="149" database="SP" id="KRA92_PANTR" ac="A5A6P5" length="170" description="Keratin-associated protein 9-2 OS=Pan troglodytes GN=KRTAP9-2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>34.5</identity>
+      <positives>48.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="47" end="75">NCQTNEECAQNDMCCPSSCGRSCKTPVNI</querySeq>
+      <pattern>+C     C Q+  C P  C R+C  P N+</pattern>
+      <matchSeq start="94" end="122">SCCGQTSCGQSSSCTPVYCRRTCYYPTNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="150" database="SP" id="INSRR_MOUSE" ac="Q9WTL4" length="1300" description="Insulin receptor-related protein OS=Mus musculus GN=Insrr PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>63</score>
+      <bits>32.0469</bits>
+      <expectation>3.4</expectation>
+      <identity>34.4</identity>
+      <positives>43.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="96" end="127">CPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>C K  PC     C+    CC + C+  C  PE</pattern>
+      <matchSeq start="210" end="241">CQKVCPCPRGMACTAGGDCCHSECLGGCSQPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="151" database="SP" id="WFKN1_MOUSE" ac="Q8R0S6" length="552" description="WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 1 OS=Mus musculus GN=Wfikkn1 PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>42.9</identity>
+      <positives>61.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="99" end="119">DNPCSIDSDCSGTMKCCKNGC</querySeq>
+      <pattern>+  C+ D DC+ + KCC N C</pattern>
+      <matchSeq start="53" end="73">ERECTGDQDCAASEKCCTNVC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="152" database="SP" id="WFDC6_HUMAN" ac="Q9BQY6" length="131" description="WAP four-disulfide core domain protein 6 OS=Homo sapiens GN=WFDC6 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>37.9</identity>
+      <positives>48.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="41" end="69">EDTECINCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>E  E   C    +C +N  CCP S G+ C</pattern>
+      <matchSeq start="41" end="69">EVEEIDQCTKPRDCPENMKCCPFSRGKKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="153" database="SP" id="WFC6B_MOUSE" ac="F6ULY1" length="148" description="WAP four-disulfide core domain protein 6B OS=Mus musculus GN=Wfdc6b PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>40.9</identity>
+      <positives>54.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="69">CQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>C  + EC   + CC  +CGR C</pattern>
+      <matchSeq start="59" end="80">CLRHRECPGEERCCLFACGRKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="154" database="SP" id="LECB_PHYAM" ac="Q9AVB0" length="361" description="Lectin-B OS=Phytolacca americana PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>34.5</identity>
+      <positives>55.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="96" end="124">CPKDNPCSIDSDCSGTMKCCKNGCIMSCM</querySeq>
+      <pattern>CP D  CS+   C  +++ C +GC   C+</pattern>
+      <matchSeq start="54" end="82">CPDDLCCSVFGHCGVSVQHCGDGCQSQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="155" database="SP" id="KRA48_HUMAN" ac="Q9BYQ9" length="185" description="Keratin-associated protein 4-8 OS=Homo sapiens GN=KRTAP4-8 PE=2 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>28.2</identity>
+      <positives>48.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="31" end="69">QSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>QS+C   +    + C++     +C Q+  C P+ C  SC</pattern>
+      <matchSeq start="56" end="94">QSVCCQPTCCRPSCCVSSCCKPQCCQSVCCQPTCCHPSC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="156" database="SP" id="INSRR_HUMAN" ac="P14616" length="1297" description="Insulin receptor-related protein OS=Homo sapiens GN=INSRR PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>31.3</identity>
+      <positives>43.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="96" end="127">CPKDNPCSIDSDCSGTMKCCKNGCIMSCMDPE</querySeq>
+      <pattern>C +  PC     C+   +CC   C+  C  PE</pattern>
+      <matchSeq start="210" end="241">CQRVCPCPHGMACTARGECCHTECLGGCSQPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="157" database="SP" id="ACN1_CAEEL" ac="Q18581" length="906" description="Inactive angiotensin-converting enzyme-related protein OS=Caenorhabditis elegans GN=acn-1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>62</score>
+      <bits>31.5846</bits>
+      <expectation>4.7</expectation>
+      <identity>40.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="94" end="118">GPCPKDNPCSIDSDCSGTMKCCKNG</querySeq>
+      <pattern>G C     C +DS C+GT+  C +G</pattern>
+      <matchSeq start="800" end="824">GECVNGQECLLDSHCNGTICVCNDG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="158" database="SP" id="SP3_MOUSE" ac="O70494" length="783" description="Transcription factor Sp3 OS=Mus musculus GN=Sp3 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>31.8</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="21" end="64">NLQEHVFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSS</querySeq>
+      <pattern>N   H+ N+ Q+M S D+     E ++   NE  A  D+  P+S</pattern>
+      <matchSeq start="293" end="336">NADGHLINTGQAMDSSDNSERTGERVSPDVNETNADTDLFVPTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="159" database="SP" id="SEM6C_HUMAN" ac="Q9H3T2" length="930" description="Semaphorin-6C OS=Homo sapiens GN=SEMA6C PE=2 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>29.7</identity>
+      <positives>48.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="62" end="98">PSSCGRSCKTPVNIEVQKAGRCPWNPIQMIAAGPCPK</querySeq>
+      <pattern>PS     C +P+ ++V   GRC   P +   + P P+</pattern>
+      <matchSeq start="807" end="843">PSPRPHECASPLRLDVPPEGRCASAPARPALSAPAPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="160" database="SP" id="SAE1_XENLA" ac="Q8JGT5" length="344" description="SUMO-activating enzyme subunit 1 OS=Xenopus laevis GN=sae1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>29.3</identity>
+      <positives>48.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="17" end="74">ALARNLQEHVFNSVQSMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTPVN</querySeq>
+      <pattern>+L +N  E   N  +++    S   DTE IN ++++   Q D+ C +SC       VN</pattern>
+      <matchSeq start="84" end="141">SLGQNRAEASLNRARNLNPMVSVEADTENINQKSDDFFTQFDVVCLTSCPSDLLVRVN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="161" database="SP" id="KRA97_HUMAN" ac="A8MTY7" length="169" description="Keratin-associated protein 9-7 OS=Homo sapiens GN=KRTAP9-7 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>23.3</identity>
+      <positives>34.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="54" end="126">CAQNDMCCPSSCGRSCKTPVNIEVQKAGRCPWNPIQMIAAGPCPKDNPCSIDSDCSGTMKCCKNGCIMSCMDP</querySeq>
+      <pattern>C  +  C  +SCG SC  P +       R  ++P  +   G   +    S    C     C    C  +C  P</pattern>
+      <matchSeq start="85" end="157">CCGSSCCGQTSCGSSCCQPSSCAPIYCRRTCYHPTSVYLPGCLNQSCGSSCCQPCCRPACCETTCCRTTCFQP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="162" database="SP" id="KRA45_HUMAN" ac="Q9BYR2" length="181" description="Keratin-associated protein 4-5 OS=Homo sapiens GN=KRTAP4-5 PE=1 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>30.8</identity>
+      <positives>35.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="34" end="72">CSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>C + S      C        C +   CCPS C  SC  P</pattern>
+      <matchSeq start="70" end="108">CCESSCCRPCCCQTTCCRTTCCRTTCCCPSCCVSSCCRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="163" database="SP" id="KRA44_HUMAN" ac="Q9BYR3" length="166" description="Keratin-associated protein 4-4 OS=Homo sapiens GN=KRTAP4-4 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>31.7</identity>
+      <positives>39.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="32" end="72">SMCSDDSFSEDTECINCQTNEECAQNDMCCPSSCGRSCKTP</querySeq>
+      <pattern>S+CSD     +  C        C +   C PS C  SC  P</pattern>
+      <matchSeq start="8" end="48">SVCSDQGCGLENCCRPSYCQTTCCRTTCCRPSCCVSSCCRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="164" database="SP" id="KRA24_HUMAN" ac="Q9BYR9" length="128" description="Keratin-associated protein 2-4 OS=Homo sapiens GN=KRTAP2-4 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>47.6</identity>
+      <positives>52.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="45" end="65">CINCQTNEECAQNDMCCPSSC</querySeq>
+      <pattern>C  C   E C +   CCPSSC</pattern>
+      <matchSeq start="64" end="84">CDPCSLQEGCCRPITCCPSSC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="165" database="SP" id="KRA23_HUMAN" ac="P0C7H8" length="128" description="Keratin-associated protein 2-3 OS=Homo sapiens GN=KRTAP2-3 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>47.6</identity>
+      <positives>52.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="45" end="65">CINCQTNEECAQNDMCCPSSC</querySeq>
+      <pattern>C  C   E C +   CCPSSC</pattern>
+      <matchSeq start="64" end="84">CDPCSLQEGCCRPITCCPSSC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="166" database="SP" id="KRA22_HUMAN" ac="Q9BYT5" length="123" description="Keratin-associated protein 2-2 OS=Homo sapiens GN=KRTAP2-2 PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>47.6</identity>
+      <positives>52.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="45" end="65">CINCQTNEECAQNDMCCPSSC</querySeq>
+      <pattern>C  C   E C +   CCPSSC</pattern>
+      <matchSeq start="64" end="84">CDPCSLQEGCCRPITCCPSSC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="167" database="SP" id="KRA21_HUMAN" ac="Q9BYU5" length="128" description="Keratin-associated protein 2-1 OS=Homo sapiens GN=KRTAP2-1 PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>47.6</identity>
+      <positives>52.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="45" end="65">CINCQTNEECAQNDMCCPSSC</querySeq>
+      <pattern>C  C   E C +   CCPSSC</pattern>
+      <matchSeq start="64" end="84">CDPCSLQEGCCRPITCCPSSC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="168" database="SP" id="CHI8_POPTR" ac="P16061" length="316" description="Endochitinase WIN8 OS=Populus trichocarpa GN=WIN8 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>61</score>
+      <bits>31.1224</bits>
+      <expectation>6.5</expectation>
+      <identity>39.3</identity>
+      <positives>46.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="96" end="123">CPKDNPCSIDSDCSGTMKCCKNGCIMSC</querySeq>
+      <pattern>CP D  CS    C  T+  C  GC+  C</pattern>
+      <matchSeq start="35" end="62">CPNDLCCSSGGYCGLTVAYCCAGCVSQC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="169" database="SP" id="WFD12_RAT" ac="Q6IE40" length="78" description="WAP four-disulfide core domain protein 12 OS=Rattus norvegicus GN=Wfdc12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>34.6</identity>
+      <positives>46.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="73">CQTNEECAQNDMCCPSSCGRSCKTPV</querySeq>
+      <pattern>C  + +C    +CC   CG  C  PV</pattern>
+      <matchSeq start="47" end="72">CHNDNDCKDQKICCYWHCGFKCVQPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="170" database="SP" id="RUTD_ECO44" ac="D3H122" length="270" description="Putative aminoacrylate hydrolase RutD OS=Escherichia coli O44:H18 (strain 042 / EAEC) GN=rutD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>55.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="39" end="65">FSEDTECINCQTNEECAQNDMCCPSSC</querySeq>
+      <pattern>FS  T+ I C     CA +D+  PS+C</pattern>
+      <matchSeq start="190" end="216">FSRHTDRIRCPVQIICASDDLLVPSAC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="171" database="SP" id="PGBM_MOUSE" ac="Q05793" length="3707" description="Basement membrane-specific heparan sulfate proteoglycan core protein OS=Mus musculus GN=Hspg2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>46.2</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="45" end="70">CINCQTNEECAQNDMCCPSSCGRSCK</querySeq>
+      <pattern>C+NCQ N E  Q D C P   G + K</pattern>
+      <matchSeq start="780" end="805">CLNCQHNTEGPQCDKCKPGFFGDATK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="172" database="SP" id="MCSP_RAT" ac="Q64298" length="145" description="Sperm mitochondrial-associated cysteine-rich protein OS=Rattus norvegicus GN=Smcp PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>26.4</identity>
+      <positives>28.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="65" end="117">CGRSCKTPVNIEVQKAGRCPWNPIQMIAAGPCPKDNPCSIDSDCSGTMKCCKN</querySeq>
+      <pattern>C   C  P       A  CP  P        CPK   C     C     CC +</pattern>
+      <matchSeq start="55" end="107">CPTPCPCPATCPAACACPCPMKPCCPTKCTCCPKKCTCCPQPTCCVQPTCCSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="173" database="SP" id="KCP_XENLA" ac="Q9IBG7" length="2327" description="Kielin/chordin-like protein OS=Xenopus laevis GN=kcp PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>31.4</identity>
+      <positives>45.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="97" end="131">PKDNPCSIDSDCSGTMKCCKNGCIMSCMDPEPKSP</querySeq>
+      <pattern>P+ +PC       G ++C K  C   C +P P  P</pattern>
+      <matchSeq start="686" end="720">PQGDPCQSCRCLEGRVQCRKRHCAALCRNPLPPRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="174" database="SP" id="K1H1_HUMAN" ac="Q15323" length="416" description="Keratin, type I cuticular Ha1 OS=Homo sapiens GN=KRT31 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>34.4</identity>
+      <positives>53.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="100" end="131">NPCSIDSDCSGTMKCCKNGCIMSCMDPEPKSP</querySeq>
+      <pattern>NPC+  + CS  +  C +    SC+ P P +P</pattern>
+      <matchSeq start="370" end="401">NPCATTNACSKPIGPCLSNPCTSCVPPAPCTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="175" database="SP" id="FBN2_MOUSE" ac="Q61555" length="2907" description="Fibrillin-2 OS=Mus musculus GN=Fbn2 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>34.4</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="34" end="65">CSDDSFSEDTECINCQTNEECAQNDMCCPSSC</querySeq>
+      <pattern>C+ +   E    +NC+   ECAQN + C   C</pattern>
+      <matchSeq start="2230" end="2261">CTCNEGFEPGPMMNCEDINECAQNPLLCAFRC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="176" database="SP" id="FBN2_HUMAN" ac="P35556" length="2912" description="Fibrillin-2 OS=Homo sapiens GN=FBN2 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>34.4</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="34" end="65">CSDDSFSEDTECINCQTNEECAQNDMCCPSSC</querySeq>
+      <pattern>C+ +   E    +NC+   ECAQN + C   C</pattern>
+      <matchSeq start="2237" end="2268">CNCNEGFEPGPMMNCEDINECAQNPLLCAFRC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="177" database="SP" id="EZ1_MAIZE" ac="Q8S4P6" length="931" description="Histone-lysine N-methyltransferase EZ1 OS=Zea mays GN=EZ1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>41.7</identity>
+      <positives>45.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="95" end="118">PCPKDNPCSIDSDCSGTMKCCKNG</querySeq>
+      <pattern>PC + NPC   S C     C  NG</pattern>
+      <matchSeq start="674" end="697">PCRQYNPCGCQSTCGKQCPCLSNG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="178" database="SP" id="DF254_ARATH" ac="Q2V318" length="89" description="Putative defensin-like protein 254 OS=Arabidopsis thaliana GN=At5g43401 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>50.0</identity>
+      <positives>54.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="48" end="69">CQTNEECAQNDMCCPSSCGRSC</querySeq>
+      <pattern>C TNEEC  N  C  + C  SC</pattern>
+      <matchSeq start="31" end="52">CATNEECRINCQCDAAYCDLSC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="179" database="SP" id="BAR3_CHITE" ac="Q03376" length="1700" description="Balbiani ring protein 3 OS=Chironomus tentans GN=BR3 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>60</score>
+      <bits>30.6601</bits>
+      <expectation>8.9</expectation>
+      <identity>40.7</identity>
+      <positives>44.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <querySeq start="102" end="128">CSIDSDCSGTMKCCKNGCIMSCMDPEP</querySeq>
+      <pattern>C  D  C G+   CKN C   C   EP</pattern>
+      <matchSeq start="202" end="228">CKGDGKCQGSKIWCKNNCRCICPTAEP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult></EBIApplicationResult>
